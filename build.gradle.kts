@@ -1,4 +1,4 @@
-group = "com.example" // TODO: Change this to your group
+group = "org.jeffstein"
 version = "1.0-SNAPSHOT" // TODO: Change this to your addon version
 
 plugins {
@@ -21,7 +21,7 @@ dependencies {
 addon {
     name = project.name.replaceFirstChar(Char::uppercase)
     version = project.version.toString()
-    main = "com.example.ExampleAddon" // TODO: Change this to your main class
+    main = "org.jeffstein.ExampleAddon" // TODO: Change this to your main class
     
     // output directory for the generated addon jar is read from the "outDir" project property (-PoutDir="...")
     val outDir = project.findProperty("outDir")
