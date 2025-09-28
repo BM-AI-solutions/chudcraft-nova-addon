@@ -1,5 +1,5 @@
 group = "org.jeffstein"
-version = "1.0-SNAPSHOT" // TODO: Change this to your addon version
+version = "1.0.0" // Aether-Tekkit Nova Addon
 
 plugins {
     alias(libs.plugins.kotlin)
@@ -19,10 +19,12 @@ dependencies {
 }
 
 addon {
-    name = project.name.replaceFirstChar(Char::uppercase)
+    name = "Aether-Tekkit"
     version = project.version.toString()
-    main = "org.jeffstein.ExampleAddon" // TODO: Change this to your main class
-    
+    main = "org.jeffstein.AetherTekkitAddon"
+    description = "A magical and industrial addon combining Aether dimensions with Tekkit-inspired machinery"
+    authors = listOf("jeffstein")
+
     // output directory for the generated addon jar is read from the "outDir" project property (-PoutDir="...")
     val outDir = project.findProperty("outDir")
     if (outDir is String)

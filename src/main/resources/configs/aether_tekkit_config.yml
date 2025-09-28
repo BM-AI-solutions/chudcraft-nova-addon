@@ -1,0 +1,324 @@
+# Aether-Tekkit Nova Addon Configuration
+# Configure various aspects of the magical and technological systems
+
+# === GENERAL SETTINGS ===
+general:
+  # Enable debug messages
+  debug_mode: false
+  
+  # Language for messages (future feature)
+  language: "en_US"
+  
+  # Enable automatic updates check
+  check_updates: true
+
+# === AETHER DIMENSION SETTINGS ===
+aether:
+  # Enable the Aether dimension
+  enabled: true
+  
+  # Dimension generation settings
+  generation:
+    # Chance for floating islands (0.0 - 1.0)
+    island_chance: 0.3
+    
+    # Average distance between islands
+    island_spacing: 150
+    
+    # Enable cloud generation
+    generate_clouds: true
+    
+    # Cloud density (0.0 - 1.0)
+    cloud_density: 0.4
+  
+  # Biome settings
+  biomes:
+    aether_plains:
+      weight: 40
+      temperature: 0.8
+      humidity: 0.4
+    
+    aether_forest:
+      weight: 30
+      temperature: 0.7
+      humidity: 0.8
+    
+    aether_highlands:
+      weight: 20
+      temperature: 0.6
+      humidity: 0.3
+    
+    aether_crystal_fields:
+      weight: 10
+      temperature: 0.9
+      humidity: 0.2
+
+# === MAGICAL SYSTEM SETTINGS ===
+magic:
+  # Enable the spell system
+  spell_system_enabled: true
+  
+  # Mana settings
+  mana:
+    # Starting mana for new players
+    starting_mana: 100
+    
+    # Maximum mana players can achieve
+    max_mana_cap: 500
+    
+    # Mana regeneration rate (per second)
+    regen_rate: 2
+    
+    # Mana regeneration delay after casting (seconds)
+    regen_delay: 3
+  
+  # Spell settings
+  spells:
+    # Global spell cooldown multiplier
+    cooldown_multiplier: 1.0
+    
+    # Global mana cost multiplier
+    mana_cost_multiplier: 1.0
+    
+    # Enable spell learning through research
+    research_required: true
+  
+  # Research system
+  research:
+    # Enable research system
+    enabled: true
+    
+    # Research point multipliers for different activities
+    point_multipliers:
+      crafting: 1.0
+      combat: 1.5
+      exploration: 2.0
+      experimentation: 1.2
+
+# === MACHINE SETTINGS ===
+machines:
+  # Enable magical machines
+  enabled: true
+  
+  # Energy system
+  energy:
+    # Base energy generation rates
+    ambrosium_reactor_rate: 100
+    crystal_resonator_rate: 50
+    wind_collector_rate: 25
+    
+    # Energy storage capacities
+    mana_battery_capacity: 10000
+    crystal_capacitor_capacity: 5000
+  
+  # Processing speeds (ticks per operation)
+  processing:
+    enchanter_speed: 200
+    empowerment_chamber_speed: 300
+    essence_extractor_speed: 150
+    
+  # Automation settings
+  automation:
+    # Enable spirit conveyors
+    spirit_conveyors: true
+    
+    # Enable portal networks
+    portal_networks: true
+    
+    # Maximum portal network size
+    max_portal_network_size: 50
+
+# === WORLD GENERATION FEATURES ===
+worldgen:
+  # Ore generation in Aether
+  ores:
+    ambrosium:
+      enabled: true
+      vein_size: 8
+      veins_per_chunk: 12
+      min_height: 0
+      max_height: 128
+    
+    zanite:
+      enabled: true
+      vein_size: 6
+      veins_per_chunk: 8
+      min_height: 0
+      max_height: 64
+    
+    gravitite:
+      enabled: true
+      vein_size: 4
+      veins_per_chunk: 3
+      min_height: 0
+      max_height: 32
+  
+  # Structure generation
+  structures:
+    # Enable Aether dungeons
+    dungeons_enabled: true
+    
+    # Dungeon spawn chance per chunk
+    dungeon_chance: 0.01
+    
+    # Enable floating ruins
+    ruins_enabled: true
+    
+    # Ruins spawn chance per chunk
+    ruins_chance: 0.05
+    
+    # Enable crystal formations
+    crystal_formations: true
+
+# === GAMEPLAY BALANCE ===
+balance:
+  # Tool durability multipliers
+  tool_durability:
+    skyroot: 1.0
+    holystone: 1.2
+    zanite: 1.5
+    gravitite: 2.0
+    valkyrie: 3.0
+  
+  # Damage multipliers
+  weapon_damage:
+    skyroot: 1.0
+    holystone: 1.1
+    zanite: 1.3
+    gravitite: 1.6
+    valkyrie: 2.0
+  
+  # Armor protection multipliers
+  armor_protection:
+    leather: 1.0
+    zanite: 1.4
+    gravitite: 1.8
+    valkyrie: 2.2
+    phoenix: 2.5
+
+# === INTEGRATION SETTINGS ===
+integration:
+  # Enable integration with other Nova addons
+  nova_machines: true
+  
+  # Enable economy integration (if available)
+  economy: false
+  
+  # Enable permissions integration
+  permissions: true
+
+# === PERFORMANCE SETTINGS ===
+performance:
+  # Limit particle effects for better performance
+  limit_particles: false
+  
+  # Maximum particles per effect
+  max_particles_per_effect: 50
+  
+  # Reduce update frequency for machines
+  machine_update_interval: 20
+  
+  # Enable async processing where possible
+  async_processing: true
+
+# === PVP SYSTEM ===
+pvp:
+  # Enable PvP system
+  enabled: true
+
+  # Arena settings
+  arenas:
+    # Auto-create arenas on server start
+    auto_create: true
+
+    # Maximum arenas per type
+    max_arenas_per_type: 3
+
+    # Arena reset time after game ends (seconds)
+    reset_time: 300
+
+  # Game modes
+  game_modes:
+    floating_islands:
+      enabled: true
+      max_players: 8
+      game_duration: 600 # 10 minutes
+
+    spell_dueling:
+      enabled: true
+      max_players: 2
+      mana_multiplier: 1.5
+      spell_cooldown_reduction: 0.5
+
+    gravitite_gladiator:
+      enabled: true
+      max_players: 6
+      anti_gravity_strength: 2
+
+    phoenix_battle_royale:
+      enabled: true
+      max_players: 16
+      phoenix_rebirths: 3
+      shrinking_border: true
+
+    storm_arena:
+      enabled: true
+      lightning_frequency: 30 # seconds
+      storm_intensity: 2
+
+    crystal_maze:
+      enabled: true
+      crystal_spawn_rate: 0.3
+      maze_complexity: 3
+
+  # PvP spells
+  pvp_spells:
+    # Enable PvP-specific spells
+    enabled: true
+
+    # Spell balance multipliers
+    damage_multiplier: 1.0
+    mana_cost_multiplier: 1.2
+    cooldown_multiplier: 0.8
+
+    # Spell restrictions in certain modes
+    spell_duel_only_spells: true
+
+  # Rewards
+  rewards:
+    # Experience for PvP victories
+    victory_exp: 100
+
+    # Research points for PvP activities
+    research_points: 15
+
+    # Special items for achievements
+    achievement_rewards: true
+
+  # Anti-grief protection
+  protection:
+    # Prevent spawn camping
+    spawn_protection_time: 10
+
+    # Prevent arena griefing
+    block_break_protection: true
+
+    # Combat logging penalties
+    combat_log_penalty: true
+
+# === DEBUG AND DEVELOPMENT ===
+debug:
+  # Log all spell casts
+  log_spell_casts: false
+
+  # Log research progress
+  log_research: false
+
+  # Log machine operations
+  log_machines: false
+
+  # Log PvP activities
+  log_pvp: false
+
+  # Enable test commands
+  test_commands: false

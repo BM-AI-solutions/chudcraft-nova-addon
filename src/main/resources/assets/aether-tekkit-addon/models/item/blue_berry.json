@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aether-tekkit-addon:item/blue_berry"
+  }
+}

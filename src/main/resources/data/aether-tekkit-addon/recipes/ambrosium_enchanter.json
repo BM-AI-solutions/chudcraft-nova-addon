@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "SES",
+    "HHH"
+  ],
+  "key": {
+    "A": {
+      "item": "aether-tekkit-addon:ambrosium_shard"
+    },
+    "C": {
+      "item": "minecraft:enchanting_table"
+    },
+    "S": {
+      "item": "aether-tekkit-addon:skyroot_planks"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "H": {
+      "item": "aether-tekkit-addon:holystone"
+    }
+  },
+  "result": {
+    "item": "aether-tekkit-addon:ambrosium_enchanter"
+  }
+}

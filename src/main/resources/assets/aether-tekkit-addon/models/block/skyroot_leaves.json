@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "aether-tekkit-addon:block/skyroot_leaves"
+  }
+}

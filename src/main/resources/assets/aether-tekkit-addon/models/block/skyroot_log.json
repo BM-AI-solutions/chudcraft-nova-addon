@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "aether-tekkit-addon:block/skyroot_log_top",
+    "side": "aether-tekkit-addon:block/skyroot_log"
+  }
+}

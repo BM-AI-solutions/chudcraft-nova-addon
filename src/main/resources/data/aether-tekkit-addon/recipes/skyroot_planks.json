@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aether-tekkit-addon:skyroot_log"
+    }
+  ],
+  "result": {
+    "item": "aether-tekkit-addon:skyroot_planks",
+    "count": 4
+  }
+}

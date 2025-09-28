@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "P": {
+      "item": "aether-tekkit-addon:skyroot_planks"
+    },
+    "S": {
+      "item": "aether-tekkit-addon:skyroot_stick"
+    }
+  },
+  "result": {
+    "item": "aether-tekkit-addon:skyroot_pickaxe"
+  }
+}

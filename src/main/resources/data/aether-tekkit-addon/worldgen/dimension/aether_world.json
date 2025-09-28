@@ -1,0 +1,15 @@
+{
+  "type": "aether-tekkit-addon:aether_world",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "layers": [
+        {
+          "block": "aether-tekkit-addon:holystone",
+          "height": 1
+        }
+      ],
+      "biome": "aether-tekkit-addon:aether_plains"
+    }
+  }
+}
